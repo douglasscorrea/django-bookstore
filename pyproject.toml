@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "django-bookstore"
+version = "0.1.0"
+description = "Book store API with Django"
+authors = ["dscorrea <douglasscorrea1@gmail.com>"]
+readme = "README.md"
+packages = [{include = "django_bookstore"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.2.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+factory-boy = "^3.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
